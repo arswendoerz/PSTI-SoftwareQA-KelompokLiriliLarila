@@ -1,5 +1,5 @@
-#Kelompok Lirili Larila
-#Software Testing & Quality Assurance
+Kelompok Lirili Larila
+Software Testing & Quality Assurance
 
 Arswendo Erza Sadewa
 Ghebi Armando
