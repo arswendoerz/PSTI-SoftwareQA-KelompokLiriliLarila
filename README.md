@@ -1,4 +1,5 @@
-# PSTI-SoftwareQA-KelompokLiriliLarila
+#Kelompok Lirili Larila
+#Software Testing & Quality Assurance
 
 Arswendo Erza Sadewa
 Ghebi Armando
