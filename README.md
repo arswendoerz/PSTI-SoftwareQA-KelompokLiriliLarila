@@ -15,10 +15,10 @@ Kami adalah kelompok penguji yang berkomitmen untuk memastikan Spotify bekerja *
 
 | Nama        | Tanggung Jawab                                | Tools                        |
 |-------------|------------------------------------------------|------------------------------|
-| **Arswendo**| Pengujian fungsional & performa               | PyTest, Lighthouse           |
-| **Ghebi**   | Pengujian API                                 | Postman, React|
-| **Melda**   | Pengujian UI otomatis                         | Selenium IDE    |
-| **Ikhwan**  | Pengujian UI otomatis                         | Selenium IDE    |
+| **Arswendo Erza Sadewa**| Pengujian fungsional & performa               | PyTest, Lighthouse           |
+| **Ghebi Armando**   | Pengujian API                                 | Postman, React|
+| **Ikhwan Fajar Khatamy**  | Pengujian UI & Fungsional                         | Selenium IDE    |
+| **Melda Frestiana**   | Pengujian UI & Fungsional                         | Selenium IDE    |
 
 Kami menggunakan berbagai tools untuk memastikan pendekatan pengujian yang **terstruktur dan holistik**.
 
