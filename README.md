@@ -1,6 +1,6 @@
-# 🎧 LiriliLArila - Spotify Testing Project
+# 🎧 LiriliLarila - Spotify Testing Project
 
-Selamat datang di repository **LiriliLArila**, tempat kami menguji aplikasi **Spotify** secara menyeluruh dari berbagai aspek:
+Selamat datang di repository **LiriliLarila**, tempat kami menguji aplikasi **Spotify** dari berbagai aspek:
 
 - 🎨 **Tampilan (UI)**
 - ⚙️ **Fungsi (Fungsionalitas)**
@@ -13,13 +13,27 @@ Kami adalah kelompok penguji yang berkomitmen untuk memastikan Spotify bekerja *
 
 ## 👥 Tim Kami
 
-| Nama      | Tugas & Tools                       |
-|-----------|-------------------------------------|
-| **Arswendo** | Pengujian dengan `PyTest` & Web Performance |
-| **Ghebi**     | Pengujian `API` Spotify                 |
-| **Melda**     | Pengujian UI dengan `Selenium IDE`      |
-| **Ikhwan**    | Pengujian UI dengan `Selenium IDE`      |
+| Nama        | Tanggung Jawab                                | Tools                        |
+|-------------|------------------------------------------------|------------------------------|
+| **Arswendo**| Pengujian fungsional & performa               | PyTest, Lighthouse           |
+| **Ghebi**   | Pengujian API                                 | Postman, React|
+| **Melda**   | Pengujian UI otomatis                         | Selenium IDE    |
+| **Ikhwan**  | Pengujian UI otomatis                         | Selenium IDE    |
 
-Kami menggunakan beragam tools untuk menguji aplikasi dari berbagai sisi, demi mencapai hasil pengujian yang **komprehensif dan akurat**.
+Kami menggunakan berbagai tools untuk memastikan pendekatan pengujian yang **terstruktur dan holistik**.
+
+---
+
+## 🛠️ Tools yang Digunakan
+
+| Tool            | Kegunaan                                                                      |
+|------------------|-------------------------------------------------------------------------------|
+| **Selenium IDE** | Pengujian UI otomatis tanpa coding                                            |
+| **PyTest**       | Framework pengujian berbasis Python                                           |
+| **Lighthouse**   | Pengujian performa dan aksesibilitas halaman web                             |
+| **Postman**      | Pengujian dan dokumentasi API                                                |
+| **Spreadsheet**  | Dokumentasi manual hasil pengujian, checklist, dan laporan                   |
+| **React DevTools**| Dokumentasi haasil pengujian API dalan WEB      |
+| **Google Chrome DevTools** | Debugging UI, Network, dan Inspect elemen                          |
 
 ---
