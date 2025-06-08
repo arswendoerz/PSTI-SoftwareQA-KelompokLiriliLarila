@@ -1,0 +1,38 @@
+============================================================
+            RINCIAN HASIL PERFORMANCE TESTING
+============================================================
+Device          : Lenovo Ideapad Gaming 3  
+Spesifikasi 
+  - Prosesor   : AMD Ryzen 5 5600H (Hexa-core, 12 threads, up to 4.2 GHz)  
+  - RAM        : 8 GB DDR4  
+  - Storage    : 512 GB NVMe SSD  
+  - GPU        : NVIDIA GTX 1650  
+  - OS         : Windows 11 x64  
+  - Browser    : Chrome (DevTools Lighthouse, Mode Desktop)
+
+
+HOMEPAGE
++------------------------------+-----------+--------------------+------------+------------------------------------------------------------+
+| Metrik                       | Nilai     | Target Ideal       | Status     | Keterangan                                                 |
++------------------------------+-----------+--------------------+------------+------------------------------------------------------------+
+| First Contentful Paint       | 3.0 detik | < 2.0 detik        | ❌ Gagal    | Terlalu lambat munculnya konten pertama di layar.         |
+| Largest Contentful Paint     | 7.2 detik | < 2.5 detik        | ❌ Gagal    | Gambar/konten utama muncul terlalu lama.                  |
+| Total Blocking Time          | 920 ms    | < 200 ms           | ❌ Gagal    | JavaScript berat menghambat interaktivitas.               |
+| Speed Index                  | 5.1 detik | < 3.0 detik        | ❌ Gagal    | Rata-rata konten lambat.                                  |
+| Cumulative Layout Shift      | 0.088     | < 0.1              | ✅ Lolos    | Layout relatif stabil saat loading.                       |
++------------------------------+-----------+--------------------+------------+------------------------------------------------------------+
+
+============================================================
+
+Playlist
+------------------------------+-----------+--------------------+------------+------------------------------------------------------------+
+| Metrik                       | Nilai     | Target Ideal       | Status     | Keterangan                                                 |
++------------------------------+-----------+--------------------+------------+------------------------------------------------------------+
+| First Contentful Paint       | 3.1 detik | < 2.0 detik        | ❌ Gagal    | Terlalu lambat munculnya konten pertama di layar.         |
+| Largest Contentful Paint     | 6.6 detik | < 2.5 detik        | ❌ Gagal    | Konten utama seperti gambar/banner muncul sangat lambat.   |
+| Total Blocking Time          | 470 ms    | < 200 ms           | ❌ Gagal    | Proses JavaScript menghambat respons interaksi awal.      |
+| Speed Index                  | 4.5 detik | < 3.0 detik        | ❌ Gagal    | Rata-rata waktu konten tampil terlalu lambat.              |
+| Cumulative Layout Shift      | 0.423     | < 0.1              | ❌ Gagal    | Terjadi pergeseran layout yang signifikan saat loading.    |
++------------------------------+-----------+--------------------+------------+------------------------------------------------------------+
+
+============================================================
