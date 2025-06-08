@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
+import { FaGithub, FaTable } from "react-icons/fa";
 
 export default function EndpointCard({ endpoint }) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <Link
-      to={`/endpoint/${endpoint.id}`}
+    <div
       className="relative group block transition-transform duration-300 hover:scale-[1.02]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -35,7 +34,33 @@ export default function EndpointCard({ endpoint }) {
             </p>
           </div>
         </div>
+
+        {/* Link Aksi */}
+        <div className="flex gap-3 p-4 pt-0">
+          {endpoint.spreadsheetUrl && (
+            <a
+              href={endpoint.spreadsheetUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition"
+            >
+              <FaTable className="w-4 h-4" />
+              Spreadsheet
+            </a>
+          )}
+          {endpoint.githubUrl && (
+            <a
+              href={endpoint.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 inline-flex items-center justify-center gap-2 px-3 py-2 text-sm font-medium bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition"
+            >
+              <FaGithub className="w-4 h-4" />
+              GitHub
+            </a>
+          )}
+        </div>
       </div>
-    </Link>
+    </div>
   );
 }

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import { endpoints } from "../data/endpoints";
-import EndpointCard from "../components/EndpointCard";
 import { motion as Motion } from "framer-motion";
 import { GiFlexibleStar } from "react-icons/gi";
 
@@ -62,7 +61,25 @@ export default function FrontendPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4 }}
               >
-                <EndpointCard endpoint={endpoint} />
+                <a
+                  href={endpoint.spreadsheetUrl || endpoint.githubUrl || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="bg-slate-800 rounded-xl p-6 hover:bg-slate-700 transition duration-300 shadow-md hover:shadow-lg cursor-pointer h-full">
+                    <img
+                      src={endpoint.image}
+                      alt={endpoint.name}
+                      className="w-full h-40 object-cover rounded-md mb-4"
+                    />
+                    <h2 className="text-xl font-semibold text-white mb-2">
+                      {endpoint.name}
+                    </h2>
+                    <p className="text-gray-300 text-sm">
+                      {endpoint.description}
+                    </p>
+                  </div>
+                </a>
               </Motion.div>
             ))
           ) : (
