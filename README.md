@@ -13,12 +13,12 @@ Kami adalah kelompok penguji yang berkomitmen untuk memastikan Spotify bekerja *
 
 ## 👥 Tim Kami
 
-| Nama        | Tanggung Jawab                                | Tools                        |
-|-------------|------------------------------------------------|------------------------------|
-| **Arswendo Erza Sadewa**| Pengujian fungsional & performa               | PyTest, Lighthouse           |
-| **Ghebi Armando**   | Pengujian API                                 | Postman, React|
-| **Ikhwan Fajar Khatamy**  | Pengujian UI & Fungsional                         | Selenium IDE    |
-| **Melda Frestiana**   | Pengujian UI & Fungsional                         | Selenium IDE    |
+| Nama                     | Tanggung Jawab                  | Tools              |
+| ------------------------ | ------------------------------- | ------------------ |
+| **Arswendo Erza Sadewa** | Pengujian fungsional & performa | PyTest, Lighthouse |
+| **Ghebi Armando**        | Pengujian API                   | Postman, React     |
+| **Ikhwan Fajar Khatamy** | Pengujian UI & Fungsional       | Selenium IDE       |
+| **Melda Frestiana**      | Pengujian UI & Fungsional       | Selenium IDE       |
 
 Kami menggunakan berbagai tools untuk memastikan pendekatan pengujian yang **terstruktur dan holistik**.
 
@@ -26,14 +26,21 @@ Kami menggunakan berbagai tools untuk memastikan pendekatan pengujian yang **ter
 
 ## 🛠️ Tools yang Digunakan
 
-| Tool            | Kegunaan                                                                      |
-|------------------|-------------------------------------------------------------------------------|
-| **Selenium IDE** | Pengujian UI otomatis tanpa coding                                            |
-| **PyTest**       | Framework pengujian berbasis Python                                           |
-| **Lighthouse**   | Pengujian performa dan aksesibilitas halaman web                             |
-| **Postman**      | Pengujian dan dokumentasi API                                                |
-| **Spreadsheet**  | Dokumentasi manual hasil pengujian, checklist, dan laporan                   |
-| **React DevTools**| Dokumentasi haasil pengujian API dalan WEB      |
-| **Google Chrome DevTools** | Debugging UI, Network, dan Inspect elemen                          |
+| Tool                       | Kegunaan                                                   |
+| -------------------------- | ---------------------------------------------------------- |
+| **Selenium IDE**           | Pengujian UI otomatis tanpa coding                         |
+| **PyTest**                 | Framework pengujian berbasis Python                        |
+| **Lighthouse**             | Pengujian performa dan aksesibilitas halaman web           |
+| **Postman**                | Pengujian dan dokumentasi API                              |
+| **Spreadsheet**            | Dokumentasi manual hasil pengujian, checklist, dan laporan |
+| **React DevTools**         | Dokumentasi hasil pengujian API dalam tampilan web         |
+| **Google Chrome DevTools** | Debugging UI, Network, dan Inspect elemen                  |
+
+---
+
+## 📄 Dokumentasi Backend/API
+
+Untuk dokumentasi dan hasil pengujian backend serta API Spotify, silakan kunjungi:  
+🔗 [https://testing-app-spotify.vercel.app/](https://testing-app-spotify.vercel.app/)
 
 ---
