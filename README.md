@@ -1,4 +1,4 @@
-# 🎧 LiriliLarila - Spotify Testing Project
+# LiriliLarila - Spotify Testing Project
 
 Selamat datang di repository **LiriliLarila**, tempat kami menguji aplikasi **Spotify** dari berbagai aspek:
 
