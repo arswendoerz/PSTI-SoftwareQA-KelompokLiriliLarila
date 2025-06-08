@@ -1,3 +1,4 @@
+//TES KARAKTER UNIK DENGAN TANDA *^&$# DLL//
 {
   "id": "d023e9cb-2c7f-4097-a19a-665f70cfe7bb",
   "version": "2.0",
@@ -154,7 +155,10 @@
       "targets": [],
       "value": ""
     }]
-  }, {
+  }, 
+
+//TESTING NAVIGASI DENGAN TAB DENGAN KEYBOARD//
+{
     "id": "72a126eb-dd1f-489d-857c-3bac494b3ff8",
     "name": "Navigasi Tab",
     "commands": [{
@@ -222,7 +226,10 @@
       "targets": [],
       "value": ""
     }]
-  }, {
+  }, 
+
+//TES NVRD DENGAN TANDA PANAH, ALT TEKS// 
+{
     "id": "77563a91-57e1-47c4-b0b8-043725c2ad17",
     "name": "Dukungan screen reader NVRD",
     "commands": [{
@@ -268,7 +275,10 @@
       "targets": [],
       "value": ""
     }]
-  }, {
+  }, 
+
+//TESTING BAHASA//
+{
     "id": "755000b4-e19c-4a5e-b01f-c7a970b6b6fb",
     "name": "Bahasa",
     "commands": [{
@@ -436,7 +446,11 @@
       "targets": [],
       "value": ""
     }]
-  }, {
+  }, 
+
+
+//TESTING TOMBOL BACK, PAUSE, PLAY DAN NEXT//
+{
     "id": "c40f3127-c0f9-40b8-b7b5-6e8ae4a68783",
     "name": "Uji Tombol",
     "commands": [{
