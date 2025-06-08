@@ -1,10 +1,12 @@
-//TES KARAKTER UNIK DENGAN TANDA *^&$# DLL//
 {
   "id": "d023e9cb-2c7f-4097-a19a-665f70cfe7bb",
   "version": "2.0",
   "name": "Spotify Testing",
   "url": "https://open.spotify.com/",
-  "tests": [{
+  "tests": [
+
+//TES KARAKTER UNIK DENGAN TANDA *^&$# DLL//
+{
     "id": "3093ba74-1c82-406b-948d-0e5940c66122",
     "name": "tes karakter unik",
     "commands": [{
