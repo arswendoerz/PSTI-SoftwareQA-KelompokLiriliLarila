@@ -1,18 +1,18 @@
-import loginImage from "../assets/login.jpg";
+import loginImage from "../assets/artists-api.png";
 import apiImage from "../assets/artists-api.png";
 import sevArtImage from "../assets/several-artist-api.png";
-import registerImage from "../assets/register.jpg";
-import orderImage from "../assets/order.jpg";
-import profileImage from "../assets/profile.jpg";
-import paymentImage from "../assets/payment.jpg";
-import searchImage from "../assets/search.jpg";
-import userImage from "../assets/user.jpg";
-import themeImage from "../assets/theme.jpg";
-import dbImage from "../assets/db.jpg";
-import notificationImage from "../assets/notification.jpg";
-import jwtImage from "../assets/jwt.jpg";
-import formImage from "../assets/form.jpg";
-//import toastImage from "../assets/toast.jpg";
+import newRelease from "../assets/new-release.png";
+import userSaveAlbums from "../assets/users-saved-albums.png";
+import getAlbums from "../assets/get-album.png";
+import checkUserSavedAlbums from "../assets/check-user-saved-Albums.png";
+import svAlbumsForCurUser from "../assets/saved-albums-for-current-user.png";
+import removeUserSvAlbums from "../assets/remove-user-saved-albums.png";
+import createPlaylist from "../assets/create-playlist.png";
+import getPlaylists from "../assets/get-playlists.png";
+import addItemToPlaylists from "../assets/add-item-to-playlist.png";
+import updatePlaylistItems from "../assets/update-playlist-items.png";
+import changePlaylistItems from "../assets/change-playlist-items.png";
+import removePlaylistItems from "../assets/remove-playlist-items.png";
 
 export const endpoints = [
   {
@@ -117,142 +117,141 @@ Returns an array of artist objects, each containing:
     name: "Auth Middleware Test",
     description:
       "PUT /auth Ensures authentication logic is enforced on secure routes.",
-    image: formImage,
+    image: checkUserSavedAlbums,
     category: "backend",
   },
   {
     id: 5,
-    name: "Registration Page Validation",
-    description: "Tests client-side validation on registration form.",
-    image: registerImage,
-    category: "frontend",
+    name: "GET New Releases",
+    description: "GET /v1/albums/new-releases",
+    image: newRelease,
+    category: "backend",
   },
   {
     id: 6,
-    name: "Order API Integration",
-    description: "GET and POST for /orders endpoint functionality.",
-    image: orderImage,
+    name: "GET User Saved Albums",
+    description: "GET /v1/me/albums",
+    image: userSaveAlbums,
     category: "backend",
   },
   {
     id: 7,
-    name: "Profile Page Component",
-    description: "UI and state testing on the profile view.",
-    image: profileImage,
-    category: "frontend",
+    name: "GET Albums",
+    description: "GET /v1/albums/{id}",
+    image: getAlbums,
+    category: "backend",
   },
   {
     id: 8,
-    name: "Payment API Simulation",
-    description:
-      "DELETE /Simulated transactions and endpoint testing for /payments.",
-    image: paymentImage,
+    name: "PUT Saved Albums for Current User",
+    description: "PUT /v1/me/albums",
+    image: svAlbumsForCurUser,
     category: "backend",
   },
   {
     id: 9,
-    name: "Search Feature Test",
-    description: "UI response and result display for search interactions.",
-    image: searchImage,
-    category: "frontend",
+    name: "DELETE User Saved Albums",
+    description: "DELETE /v1/me/albums",
+    image: removeUserSvAlbums,
+    category: "backend",
   },
   {
     id: 10,
-    name: "User Controller Test",
-    description: "Backend unit testing for user management logic.",
-    image: userImage,
+    name: "POST Create Playlist",
+    description: "POST /v1/users/{user_id}/playlists",
+    image: createPlaylist,
     category: "backend",
   },
   {
     id: 11,
-    name: "Theme Switcher Testing",
-    description: "Tests for dark/light mode toggle behavior.",
-    image: themeImage,
-    category: "frontend",
+    name: "GET Playlists",
+    description: "GET /v1/users/{user_id}/playlists",
+    image: getPlaylists,
+    category: "backend",
   },
   {
     id: 12,
-    name: "Database Connection Test",
-    description: "Ensures DB connections and failover logic.",
-    image: dbImage,
+    name: "POST Add Item to Playlists",
+    description: "POST /v1/playlists/{playlist_id}/tracks",
+    image: addItemToPlaylists,
     category: "backend",
   },
   {
     id: 13,
-    name: "Toast Notification UI",
-    description: "Check notification trigger and display logic.",
-    image: notificationImage,
-    category: "frontend",
+    name: "PUT Update Playlist Items",
+    description: "PUT /v1/playlists/{playlist_id}/tracks",
+    image: updatePlaylistItems,
+    category: "backend",
   },
   {
     id: 14,
-    name: "JWT Token Handling",
-    description: "Tests for generating and validating JWT tokens.",
-    image: jwtImage,
+    name: "PUT Change Playlist Items",
+    description: "PUT /v1/playlists/{playlist_id}/tracks",
+    image: changePlaylistItems,
     category: "backend",
   },
   {
     id: 15,
     name: "Form Input Component",
     description: "Tests for input state, validation and error messages.",
-    image: formImage,
-    category: "frontend",
+    image: removePlaylistItems,
+    category: "backend",
   },
   {
     id: 16,
     name: "Payment API Simulation",
     description:
       "DELETE /Simulated transactions and endpoint testing for /payments.",
-    image: paymentImage,
+    image: svAlbumsForCurUser,
     category: "backend",
   },
   {
     id: 17,
     name: "Search Feature Test",
     description: "UI response and result display for search interactions.",
-    image: searchImage,
+    image: svAlbumsForCurUser,
     category: "frontend",
   },
   {
     id: 18,
     name: "User Controller Test",
     description: "Backend unit testing for user management logic.",
-    image: userImage,
+    image: createPlaylist,
     category: "backend",
   },
   {
     id: 19,
     name: "Theme Switcher Testing",
     description: "Tests for dark/light mode toggle behavior.",
-    image: themeImage,
-    category: "frontend",
+    image: getPlaylists,
+    category: "backend",
   },
   {
     id: 20,
     name: "Database Connection Test",
     description: "Ensures DB connections and failover logic.",
-    image: dbImage,
+    image: addItemToPlaylists,
     category: "backend",
   },
   {
     id: 21,
     name: "Toast Notification UI",
     description: "Check notification trigger and display logic.",
-    image: notificationImage,
+    image: updatePlaylistItems,
     category: "frontend",
   },
   {
     id: 22,
     name: "JWT Token Handling",
     description: "Tests for generating and validating JWT tokens.",
-    image: jwtImage,
+    image: changePlaylistItems,
     category: "backend",
   },
   {
     id: 23,
     name: "Form Input Component",
     description: "Tests for input state, validation and error messages.",
-    image: formImage,
+    image: checkUserSavedAlbums,
     category: "frontend",
   },
 ];
