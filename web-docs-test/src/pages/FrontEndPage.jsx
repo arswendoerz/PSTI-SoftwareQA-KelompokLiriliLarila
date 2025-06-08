@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import { endpoints } from "../data/endpoints";
 import EndpointCard from "../components/EndpointCard";
 import { motion as Motion } from "framer-motion";
+import { GiFlexibleStar } from "react-icons/gi";
 
 export default function FrontendPage() {
   const [query, setQuery] = useState("");
@@ -27,8 +28,9 @@ export default function FrontendPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-teal-300">
-            Dokumentasi API Frontend ✨
+          <h1 className="text-5xl sm:text-5xl font-bold mb-4 text-teal-300">
+            Dokumentasi API Frontend{" "}
+            <GiFlexibleStar className="text-6xl inline-block text-teal-100 animate-spin-slow" />
           </h1>
           <p className="text-lg sm:text-xl text-slate-200">
             Temukan endpoint terkait frontend yang telah kami dokumentasikan dan
@@ -42,7 +44,7 @@ export default function FrontendPage() {
         <div className="mb-10 flex justify-center">
           <input
             type="text"
-            placeholder="🔍 Cari endpoint frontend..."
+            placeholder="Cari endpoint frontend..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="w-full sm:w-2/3 lg:w-1/2 px-6 py-3 rounded-full border border-teal-400 shadow-lg focus:outline-none focus:ring-4 focus:ring-teal-500/40 bg-white/90 text-gray-800 placeholder-gray-500 transition duration-300 transform hover:scale-105 backdrop-blur-md"

@@ -9,13 +9,19 @@ export default function Navbar() {
     { name: "Home", to: "/" },
     { name: "Frontend", to: "/frontend" },
     { name: "Backend", to: "/backend" },
-    { name: "GitHub", href: "https://github.com", external: true },
+    {
+      name: "GitHub",
+      href: "https://github.com/arswendoerz/PSTI-SoftwareQA-KelompokLiriliLarila/tree/main",
+      external: true,
+    },
   ];
 
   return (
     <nav className="w-full fixed top-0 z-50 bg-gradient-to-r from-black/80 via-slate-900/80 to-black/90 shadow-md backdrop-blur-sm px-4 py-3">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="text-white text-xl font-bold">Lirili Larila</div>
+        <div className="inline-block text-white text-xl font-bold animate-[slide_6s_linear_infinite_alternate]">
+          Lirili Larila
+        </div>
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-6 text-white font-medium text-sm sm:text-base">

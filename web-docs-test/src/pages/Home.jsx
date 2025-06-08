@@ -1,5 +1,6 @@
 import Navbar from "../components/Navbar";
 import { motion as Motion } from "framer-motion";
+import { MdGroups } from "react-icons/md";
 
 export default function Home() {
   return (
@@ -49,7 +50,7 @@ export default function Home() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            🚀 Fitur Utama Platform Kami
+            Fitur Utama Platform Kami
           </Motion.h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 text-left">
             {[
@@ -99,9 +100,11 @@ export default function Home() {
       {/* Tim Developer */}
       <section className="py-20 px-6 bg-slate-900">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-10">
-            👨‍💻 Tentang Tim Developer
+          <h2 className="text-3xl sm:text-4xl font-bold mb-10 flex items-center gap-3 justify-center">
+            <MdGroups className="text-teal-400 text-4xl" />
+            Tentang Tim Developer
           </h2>
+
           <div className="grid sm:grid-cols-2 gap-8">
             {[
               { name: "Ghebi Armando", role: "Software Tester API Endpoint" },

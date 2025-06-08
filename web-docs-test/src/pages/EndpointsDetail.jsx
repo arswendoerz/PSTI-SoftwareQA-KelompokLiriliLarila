@@ -25,7 +25,7 @@ export default function EndpointDetail() {
       </Link>
 
       <h1 className="text-black text-3xl font-bold mb-2">{endpoint.name}</h1>
-      <p className="mb-4 text-gray-300">{endpoint.description}</p>
+      <p className="mb-4 text-blue-300">{endpoint.description}</p>
 
       <img
         src={endpoint.image}

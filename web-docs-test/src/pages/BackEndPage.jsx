@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Navbar from "../components/Navbar";
 import { endpoints } from "../data/endpoints";
 import EndpointCard from "../components/EndpointCard";
-import { motion as Motion } from "framer-motion";
+import { motion as Motion, useInView } from "framer-motion";
+import { IoMdRocket } from "react-icons/io";
 
 export default function BackendPage() {
   const [query, setQuery] = useState("");
+  const rocketRef = useRef(null);
+  const isInView = useInView(rocketRef, { once: true });
 
   const backendEndpoints = endpoints.filter(
     (endpoint) =>
@@ -20,7 +23,7 @@ export default function BackendPage() {
       <Navbar />
 
       {/* Hero Section Backend */}
-      <section className="py-28 text-center px-6 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <section className="py-28 text-center px-6 bg-gradient-to-br from-blue-950 via-teal-900 to-indigo-900">
         <Motion.div
           className="max-w-4xl mx-auto"
           initial={{ opacity: 0, y: -10 }}
@@ -28,7 +31,26 @@ export default function BackendPage() {
           transition={{ duration: 0.6 }}
         >
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-teal-400">
-            Dokumentasi API Backend 🚀
+            Dokumentasi API Backend{" "}
+            <Motion.span
+              ref={rocketRef}
+              initial={{ y: 0 }}
+              animate={
+                isInView
+                  ? {
+                      y: [0, -5, 0, -8, 0, -5, 0], // animasi seperti goyang ke atas-bawah
+                      transition: {
+                        duration: 1.5,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      },
+                    }
+                  : {}
+              }
+              className="inline-block"
+            >
+              <IoMdRocket className="text-6xl text-teal-100" />
+            </Motion.span>
           </h1>
           <p className="text-lg sm:text-xl text-slate-300">
             Telusuri berbagai endpoint backend yang telah kami uji dan
@@ -42,7 +64,7 @@ export default function BackendPage() {
         <div className="mb-10 flex justify-center">
           <input
             type="text"
-            placeholder="🔍 Cari endpoint backend..."
+            placeholder="Cari endpoint backend..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="w-full sm:w-2/3 lg:w-1/2 px-6 py-3 rounded-full border border-teal-400 shadow-lg focus:outline-none focus:ring-4 focus:ring-teal-500/40 bg-white/90 text-gray-800 placeholder-gray-500 transition duration-300 transform hover:scale-105 backdrop-blur-md"
