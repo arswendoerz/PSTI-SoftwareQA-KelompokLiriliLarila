@@ -8,13 +8,7 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section
-        className="relative flex items-center justify-center text-center px-6 py-24 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1614850523717-3b6f9c768e46?auto=format&fit=crop&w=1920&q=80')",
-        }}
-      >
+      <section className="relative flex items-center justify-center text-center px-6 py-24 bg-cover bg-center bg-gradient-to-br from-blue-950 via-teal-900 to-indigo-900">
         <div className="absolute inset-0 bg-black/70 backdrop-blur-sm z-0" />
         <Motion.div
           className="relative z-10 max-w-3xl"
